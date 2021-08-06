@@ -2,12 +2,9 @@ import React from "react";
 
 class ListaOrganizadores extends React.Component {
 
-  editarOrganizador=()=>{
-
-  };
-
   render(){
     const eliminarOrganizador=this.props.eliminarOrganizador;
+    const seleccionarOrganizador = this.props.seleccionarOrganizador;
     const data = this.props.data;
     return (
     <table class="table">
@@ -28,7 +25,7 @@ class ListaOrganizadores extends React.Component {
                 <td>{organizador.email}</td>
                 <td>{organizador.clubOrganizacion}</td>
                 <td>
-                  <button class="btn btn-primary" onClick={this.editarOrganizador}>Editar</button>
+                  <button class="btn btn-primary" onClick={()=>seleccionarOrganizador(organizador)}>Editar</button>
                   <button class="btn btn-danger" onClick={()=>eliminarOrganizador(organizador)}>Eliminar</button>
                 </td>
               </tr>
