@@ -5,19 +5,7 @@ import CrearOrganizadores from "./components/crearOrganizadores";
 import EditarOrganizadores from "./components/editarOrganizador";
 
 const data = [
-  { 
-    nombre: "fabian", 
-    email: "fabian.fernandeza@sansano.usm.cl", 
-    apellidoPaterno: "fernandez",
-    apellidoMaterno: "alfaro",
-    rut: "19548707-3",
-    fechaNacimiento: "2020-03-02",
-    telefonoPersonal: "972332692",
-    clubOrganizacion: "UTFSM",
-    direccionOrganizacion: "valparaiso",
-    telefonoCorporativo: "997142324",
-    webOrganizacion: "www.google.com",
-  },
+
 ];
 
 class App extends React.Component {
