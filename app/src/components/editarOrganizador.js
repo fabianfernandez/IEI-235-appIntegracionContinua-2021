@@ -11,7 +11,7 @@ class EditarOrganizadores extends React.Component {
                     <div class="form-group"> 
                         <input type="text" id="nombre1" name="nombre" required placeholder="Nombre" onChange={onChange2} value={form2.nombre}></input>
                     </div>
-                    <div class="form-group"> 
+                    <div class="form-group" hidden="true"> 
                         <input type="email" id="email1" name="email" required placeholder="Email" onChange={onChange2} value={form2.email}></input>
                     </div>
                     <div class="form-group"> 
